@@ -1,4 +1,4 @@
-# Protein BLAST Visualization Toolkit     <img width="200" height="100" alt="image" src="https://github.com/user-attachments/assets/5bac13ee-b5c2-4f39-9ec2-affb5b543ba3" />
+# Protein BLAST Visualization Toolkit     <img width="200" height="150" alt="image" src="https://github.com/user-attachments/assets/5bac13ee-b5c2-4f39-9ec2-affb5b543ba3" />
 
 
 `Script.py` is a Python script that turns **NCBI BLASTP results** into publication-ready **plots** and **summary tables**. 
