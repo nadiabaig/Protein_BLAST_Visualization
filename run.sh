@@ -7,7 +7,7 @@ OUTDIR="out"
 mkdir -p "$OUTDIR"
 
 echo "Running BLAST visualization on $BLAST_FILE..."
-python3 prot_blast.py \
+python3 Script.py \
   --in "$BLAST_FILE" \
   --outdir "$OUTDIR" \
   --topn 10 \
