@@ -61,7 +61,6 @@ python3 Script.py --in blast_results.tsc --outdir out --topn 10 --query My_query
 ```
 ##  How to Run the script
 Optionally you can use make file
-
  **Usage:**
  ```bash
 make run
