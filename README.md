@@ -1,6 +1,6 @@
 # Protein BLAST Visualization Toolkit
 
-`prot_blast.py` is a Python script that turns **NCBI BLASTP results** into publication-ready **plots** and **summary tables**. 
+`Script.py` is a Python script that turns **NCBI BLASTP results** into publication-ready **plots** and **summary tables**. 
 It is designed for BLAST results saved in **tabular format (`-outfmt 6`)**, with optional extra fields for query length and taxonomy.
 
 ---
