@@ -22,11 +22,43 @@ It is designed for BLAST results saved in **tabular format (`-outfmt 6`)**, with
   - Optional Excel workbook (`results.xlsx`) with **automatic chunking** if datasets exceed Excel’s row limits 
 
 ---
-
 ## 📥 Input
-
 A BLAST tabular file (`-outfmt 6`). 
 For best results, include these fields:
 
 ```bash
 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen staxids sscinames salltitles"
+```
+
+##  How to Run the script
+- **Install python packages:**
+```bash
+python3 -m pip install -U pandas numpy matplotlib xlsxwriter openpyxl
+```
+ - **Generate BLAST output in tabular format:**
+   
+```bash
+blastp -query proteins.faa -db nr -out blast_results.tsv \
+  -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen staxids sscinames salltitles" 
+```
+ - **Basic Run:**
+
+```bash
+python3 Script.py --in blast_results.tsc --outdir out --pdf   
+```
+
+ - **Write an excel sheet:**
+
+```bash
+python3 Script.py --in blast_results.tsc --outdir out --xlsx  
+```
+
+  - **Show top 10 blast hits per query and force coverage map for a specific query:**
+
+```bash
+python3 Script.py --in blast_results.tsc --outdir out --topn 10 --query My_query_ID --pdf --xlsx  
+```
+
+
+
+
